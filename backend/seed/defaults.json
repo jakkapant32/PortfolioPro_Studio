@@ -1,0 +1,224 @@
+{
+  "portfolio": [
+    {
+      "id": 7,
+      "slug": "test-transfer-omise",
+      "category": "portfolio",
+      "tag": "ทดสอบชำระเงิน",
+      "title": "ทดสอบโอนเงิน (฿20)",
+      "description": "สินค้าสำหรับทดสอบระบบโอนเงินแนบสลิป — โอนแล้วรอแอดมินยืนยัน",
+      "price": 20,
+      "deliveryTime": "ทันที",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #dcfce7, #bbf7d0)",
+      "features": [
+        "ทดสอบสแกน QR PromptPay",
+        "แนบสลิปให้แอดมินตรวจ",
+        "ยอดขั้นต่ำ ฿20"
+      ],
+      "sort_order": 1,
+      "published": true
+    },
+    {
+      "slug": "portfolio-fresh-graduate",
+      "category": "portfolio",
+      "tag": "Portfolio Website",
+      "title": "Portfolio นักศึกษาจบใหม่",
+      "description": "เว็บไซต์โชว์ผลงานสำหรับสมัครงานสาย UX/UI Design และ Developer คอนเซปต์เรียบหรูสไตล์ Minimalist หน้าตาโมเดิร์นโหลดไว",
+      "price": 3500,
+      "deliveryTime": "3-5 วัน",
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #e0f2fe, #dbeafe)",
+      "features": [
+        "Responsive ทุกอุปกรณ์",
+        "หน้า About + Projects + Contact",
+        "SEO พื้นฐาน",
+        "โหลดเร็ว < 3 วินาที",
+        "แก้ไข 2 รอบ"
+      ],
+      "sort_order": 2,
+      "published": true
+    },
+    {
+      "id": 2,
+      "slug": "corporate-sme-premium",
+      "category": "corporate",
+      "tag": "Corporate Website",
+      "title": "เว็บไซต์บริษัท SME พรีเมียม",
+      "description": "เว็บไซต์องค์กรสำหรับธุรกิจบริการ ด้านการเงิน หรือสตาร์ทอัพ มาพร้อมหน้าติดต่อ ฟอร์มรับข้อมูล และระบบนัดหมายปรึกษาล่วงหน้า",
+      "price": 14900,
+      "deliveryTime": "7-14 วัน",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #fef3c7, #fde68a)",
+      "features": [
+        "หน้าแรก + บริการ + เกี่ยวกับ + ติดต่อ",
+        "ฟอร์มติดต่อ + นัดหมาย",
+        "Google Maps",
+        "Admin จัดการเนื้อหา",
+        "SSL + SEO"
+      ],
+      "sort_order": 3,
+      "published": true
+    },
+    {
+      "id": 3,
+      "slug": "sales-crm-dashboard",
+      "category": "business",
+      "tag": "Business System",
+      "title": "ระบบบริหารฝ่ายขาย (CRM Dashboard)",
+      "description": "ระบบจัดการลูกค้าสัมพันธ์และติดตามยอดขายของทีมเซลส์แบบ Real-time พร้อมแดชบอร์ดสรุปสถิติกราฟข้อมูลครบครันสำหรับผู้บริหาร",
+      "price": 28500,
+      "deliveryTime": "14-21 วัน",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #fce7f3, #fbcfe8)",
+      "features": [
+        "จัดการ Lead & Customer",
+        "Dashboard กราฟยอดขาย",
+        "ติดตามทีมเซลส์",
+        "Export รายงาน",
+        "Role-based Access"
+      ],
+      "sort_order": 4,
+      "published": true
+    },
+    {
+      "id": 4,
+      "slug": "car-rental-online",
+      "category": "business",
+      "tag": "Business System",
+      "title": "ระบบเช่ารถและจองคิวออนไลน์",
+      "description": "แพลตฟอร์มตรวจสอบสถานะ ตารางเวลารถว่าง ชำระเงินมัดจำออนไลน์ พร้อมระบบหลังบ้านจัดคิวรถยนต์และออกเอกสารใบเสร็จอัตโนมัติ",
+      "price": 22000,
+      "deliveryTime": "14-21 วัน",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #d1fae5, #a7f3d0)",
+      "features": [
+        "ตารางรถว่าง Real-time",
+        "จอง + ชำระมัดจำ",
+        "แผงควบคุมหลังบ้าน",
+        "ออกใบเสร็จอัตโนมัติ",
+        "แจ้งเตือน Line/Email"
+      ],
+      "sort_order": 5,
+      "published": true
+    },
+    {
+      "id": 5,
+      "slug": "ecommerce-full",
+      "category": "business",
+      "tag": "E-commerce Store",
+      "title": "ระบบร้านค้าออนไลน์เต็มรูปแบบ",
+      "description": "ระบบร้านช้อปปิ้งพร้อมตะกร้าสินค้า ตัดบัตรเครดิต/สแกน QR Code ระบบจัดการคลังสต็อกหลังบ้าน และระบบคำนวณค่าส่งอัตโนมัติ",
+      "price": 19900,
+      "deliveryTime": "10-18 วัน",
+      "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #e0e7ff, #c7d2fe)",
+      "features": [
+        "ตะกร้า + Checkout",
+        "QR / บัตรเครดิต",
+        "จัดการสต็อก",
+        "คำนวณค่าส่ง",
+        "รายงานยอดขาย"
+      ],
+      "sort_order": 6,
+      "published": true
+    },
+    {
+      "id": 6,
+      "slug": "lms-online-course",
+      "category": "business",
+      "tag": "Web Application",
+      "title": "ระบบคอร์สเรียนออนไลน์ (LMS)",
+      "description": "แพลตฟอร์มสำหรับโรงเรียนหรือติวเตอร์ วิดีโอสตรีมมิ่งบทเรียน ตรวจสอบความคืบหน้าการเรียน และระบบแบบทดสอบหลังเรียน",
+      "price": 25000,
+      "deliveryTime": "14-21 วัน",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+      "gradient": "linear-gradient(135deg, #fce7f3, #f9a8d4)",
+      "features": [
+        "สตรีมวิดีโอบทเรียน",
+        "ติดตามความคืบหน้า",
+        "แบบทดสอบหลังเรียน",
+        "ใบประกาศนียบัตร",
+        "ระบบสมาชิก"
+      ],
+      "sort_order": 7,
+      "published": true
+    }
+  ],
+  "blog": [
+    {
+      "slug": "portfolio-important-2026",
+      "title": "Portfolio สำคัญอย่างไรในปี 2026",
+      "excerpt": "ในยุคที่ AI และการแข่งขันสูง การมี Portfolio ที่โดดเด่นช่วยให้คุณแยกตัวจากผู้สมัครคนอื่นได้อย่างชัดเจน",
+      "date": "15 มิ.ย. 2026",
+      "tag": "Career Tips",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      "content": "\n      <p>ในปี 2026 การสมัครงานเปลี่ยนไปอย่างมาก นายจ้างไม่ได้มองแค่ Resume อีกต่อไป แต่ต้องการเห็นผลงานจริง ความสามารถ และตัวตนของผู้สมัคร</p>\n      <h2>ทำไม Portfolio ถึงสำคัญ</h2>\n      <p>Portfolio คือหน้าต่างที่แสดงให้นายจ้างเห็นว่าคุณทำอะไรได้บ้าง มันเป็นหลักฐานที่พิสูจน์ทักษะของคุณได้ดีกว่าคำอธิบายใน Resume</p>\n      <ul>\n        <li>แสดงผลงานจริงที่เคยทำ</li>\n        <li>สร้าง Personal Branding ที่โดดเด่น</li>\n        <li>เพิ่มโอกาสได้งานและต่อรองเงินเดือน</li>\n        <li>แสดงความใส่ใจในรายละเอียด</li>\n      </ul>\n      <h2>Portfolio ที่ดีควรมีอะไรบ้าง</h2>\n      <p>Portfolio ที่ดีควรมีโครงสร้างชัดเจน โหลดเร็ว รองรับมือถือ และแสดงผลงานที่เกี่ยวข้องกับตำแหน่งที่สมัคร</p>\n    ",
+      "sort_order": 1,
+      "published": true
+    },
+    {
+      "slug": "resume-vs-portfolio",
+      "title": "Resume กับ Portfolio ต่างกันอย่างไร",
+      "excerpt": "หลายคนสับสนระหว่าง Resume กับ Portfolio มาดูความแตกต่างและวิธีใช้ทั้งสองอย่างให้ได้ประโยชน์สูงสุด",
+      "date": "10 มิ.ย. 2026",
+      "tag": "Career Tips",
+      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80",
+      "content": "\n      <p>Resume และ Portfolio เป็นสิ่งที่ต่างกัน แต่เสริมกันได้อย่างลงตัว</p>\n      <h2>Resume คืออะไร</h2>\n      <p>Resume เป็นเอกสารสรุปประวัติการทำงาน การศึกษา และทักษะ ในรูปแบบ PDF หรือเอกสาร มักใช้เป็นขั้นตอนแรกในการสมัครงาน</p>\n      <h2>Portfolio คืออะไร</h2>\n      <p>Portfolio เป็นเว็บไซต์หรือแพลตฟอร์มที่แสดงผลงานจริง ให้นายจ้างเห็นว่าคุณทำอะไรได้บ้าง มักใช้ในขั้นตอนที่สองหลังจากผ่านการคัดเลือกเบื้องต้น</p>\n      <h2>ใช้ร่วมกันอย่างไร</h2>\n      <p>ส่ง Resume พร้อมลิงก์ Portfolio ใน Resume เพื่อให้นายจ้างสามารถดูผลงานเพิ่มเติมได้ทันที</p>\n    ",
+      "sort_order": 2,
+      "published": true
+    },
+    {
+      "slug": "10-tips-portfolio-job",
+      "title": "10 เทคนิคเพิ่มโอกาสได้งานด้วยเว็บไซต์ Portfolio",
+      "excerpt": "เทคนิคที่พิสูจน์แล้วว่าช่วยเพิ่มโอกาสได้งานสำหรับนักศึกษาและคนหางานในสายดิจิทัล",
+      "date": "5 มิ.ย. 2026",
+      "tag": "How-to",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+      "content": "\n      <p>Portfolio ที่ดีไม่ใช่แค่สวย แต่ต้องออกแบบมาเพื่อเป้าหมายการหางานโดยเฉพาะ</p>\n      <h2>10 เทคนิคที่ควรรู้</h2>\n      <ul>\n        <li>ใส่ Hero Section ที่บอกตัวตนชัดเจนทันที</li>\n        <li>แสดงผลงาน 3-5 ชิ้นที่ดีที่สุด ไม่ต้องใส่ทุกอย่าง</li>\n        <li>อธิบายปัญหาและวิธีแก้ในแต่ละโปรเจกต์</li>\n        <li>ใส่ Call-to-Action ติดต่อที่ชัดเจน</li>\n        <li>ทำให้โหลดเร็วกว่า 3 วินาที</li>\n        <li>รองรับมือถือ 100%</li>\n        <li>ใส่ลิงก์ GitHub, LinkedIn, Behance</li>\n        <li>เขียน About Me ที่เล่าเรื่องราวได้</li>\n        <li>อัปเดตผลงานใหม่เป็นประจำ</li>\n        <li>ใช้ SEO เพื่อให้ HR ค้นหาเจอ</li>\n      </ul>\n    ",
+      "sort_order": 3,
+      "published": true
+    },
+    {
+      "slug": "website-increase-salary",
+      "title": "เว็บไซต์ช่วยเพิ่มเงินเดือนได้จริงหรือไม่",
+      "excerpt": "ข้อมูลและกรณีศึกษาที่แสดงให้เห็นว่า Portfolio มืออาชีพส่งผลต่อการต่อรองเงินเดือนอย่างไร",
+      "date": "1 มิ.ย. 2026",
+      "tag": "Career Tips",
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+      "content": "\n      <p>คำตอบสั้นๆ คือ ได้จริง Portfolio ที่ดีช่วยสร้างความน่าเชื่อถือและแสดงมูลค่าของคุณให้นายจ้างเห็น</p>\n      <h2>Portfolio สร้างมูลค่าอย่างไร</h2>\n      <p>เมื่อนายจ้างเห็นผลงานจริง ความสามารถของคุณจะถูกประเมินสูงกว่าผู้สมัครที่มีแค่ Resume ทำให้มีโอกาสต่อรองเงินเดือนได้ดีขึ้น</p>\n      <h2>กรณีศึกษา</h2>\n      <p>นักพัฒนา Junior ที่มี Portfolio แสดงโปรเจกต์จริง สามารถต่อรองเงินเดือนได้สูงกว่าค่าเฉลี่ย 15-25% เมื่อเทียบกับผู้สมัครที่ไม่มี Portfolio</p>\n    ",
+      "sort_order": 4,
+      "published": true
+    },
+    {
+      "slug": "corporate-website-sme-2026",
+      "title": "ทำไม SME ต้องมีเว็บไซต์องค์กรในปี 2026",
+      "excerpt": "ลูกค้าค้นหาธุรกิจออนไลน์ก่อนตัดสินใจซื้อ เว็บไซต์ที่ดีช่วยสร้างความน่าเชื่อถือและเพิ่มยอดขายได้จริง",
+      "date": "20 มิ.ย. 2026",
+      "tag": "Business",
+      "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
+      "content": "\n      <p>ธุรกิจขนาดเล็กและกลาง (SME) ในประเทศไทยกว่า 70% มีการค้นหาข้อมูลออนไลน์ก่อนติดต่อซื้อสินค้าหรือบริการ หากไม่มีเว็บไซต์ คุณอาจเสียโอกาสให้คู่แข่งไป</p>\n      <h2>เว็บไซต์องค์กรช่วยอะไรได้บ้าง</h2>\n      <ul>\n        <li>สร้างความน่าเชื่อถือและภาพลักษณ์มืออาชีพ</li>\n        <li>รับลูกค้า 24 ชั่วโมง แม้ร้านปิด</li>\n        <li>แสดงผลงาน บริการ และรีวิวลูกค้า</li>\n        <li>รองรับ SEO ให้ลูกค้าค้นหาเจอใน Google</li>\n      </ul>\n      <h2>เริ่มต้นอย่างไร</h2>\n      <p>ไม่จำเป็นต้องลงทุนหลักแสน เว็บไซต์ Corporate ระดับ SME เริ่มต้นได้ตั้งแต่ 14,900 บาท พร้อมฟอร์มติดต่อ หน้าบริการ และ SEO พื้นฐาน</p>\n    ",
+      "sort_order": 5,
+      "published": true
+    }
+  ],
+  "site": {
+    "name": "PortfolioPro Studio",
+    "tagline": "WEBSITE • SYSTEM • SOLUTION",
+    "email": "jakkapant32@gmail.com",
+    "phone": "064-523-8150",
+    "phoneTel": "0645238150",
+    "promptPayPhone": "0645238150",
+    "bankName": "พร้อมเพย์",
+    "bankAccountName": "PortfolioPro Studio",
+    "bankAccountNumber": "0645238150",
+    "phoneHours": "จันทร์–ศุกร์ 9:00–18:00",
+    "lineId": "@897ruanb",
+    "lineUrl": "https://lin.ee/WTC1UGK",
+    "siteUrl": "https://portfoliopro.studio",
+    "social": {
+      "facebook": "https://www.facebook.com/jjakkapan.cchinsopa/",
+      "instagram": "https://www.instagram.com/lm_jakk/"
+    }
+  }
+}
