@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioPro Studio - Complete Prototype</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- SVG Icons -->
+<svg style="display:none;" aria-hidden="true">
+  <symbol id="icon-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+  <symbol id="icon-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="icon-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></symbol>
+  <symbol id="icon-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="icon-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+  <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+  <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
+  <symbol id="icon-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.01443 19.1559 5.06141 19.3892 4.98188 19.5844C4.60634 20.5058 4.7061 21.5543 5.37868 22.2269C5.56616 22.4144 5.86173 22.4346 6.07198 22.2749L7.49508 21.191C7.68172 21.0488 7.93512 21.0268 8.14534 21.131C9.34964 21.728 10.6402 22 12 22Z"/></symbol>
+  <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+  <symbol id="icon-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+  <symbol id="icon-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+</svg>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <div class="logo" onclick="navigateTo('home')">
+      <div class="logo-icon"><svg><use href="#icon-logo"/></svg></div>
+      PortfolioPro Studio
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="navigateTo('home')" id="nav-home" class="active"><svg class="icon-nav"><use href="#icon-layout"/></svg>หน้าหลัก</a></li>
+      <li><a onclick="navigateTo('showcase')" id="nav-showcase"><svg class="icon-nav"><use href="#icon-palette"/></svg>คลังผลงาน & บริการ</a></li>
+      <li><a onclick="navigateTo('about')" id="nav-about"><svg class="icon-nav"><use href="#icon-users"/></svg>เกี่ยวกับเรา</a></li>
+      <li><a onclick="navigateTo('contact')" id="nav-contact"><svg class="icon-nav"><use href="#icon-mail"/></svg>ติดต่อเรา</a></li>
+      <li><a onclick="navigateTo('dashboard')" id="nav-dashboard" style="display:none;"><svg class="icon-nav"><use href="#icon-chart"/></svg>แดชบอร์ด</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="cart-icon-container" onclick="toggleCart()" title="ตะกร้าบริการ">
+        <svg class="icon" style="stroke:var(--text);fill:none;"><use href="#icon-cart"/></svg>
+        <span class="cart-badge" id="cart-count">0</span>
+      </div>
+      <button class="nav-cta" id="nav-login-btn" onclick="navigateTo('login')">เข้าสู่ระบบ <svg class="icon-sm" style="stroke:white;"><use href="#icon-arrow-right"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<div class="main-content">
+
+<!-- PAGE: HOME -->
+<div id="page-home" class="app-page active">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge"><svg><use href="#icon-sparkle"/></svg>สร้างภาพลักษณ์ดิจิทัลที่โดดเด่น</div>
+        <h1>สร้าง <span>Portfolio</span> มืออาชีพ<br>เพิ่มโอกาสได้งาน</h1>
+        <p class="hero-desc">ออกแบบและพัฒนาเว็บไซต์ Portfolio ส่วนบุคคล พร้อมระบบสำหรับองค์กร ด้วยเทคโนโลยี React + Golang ที่ทันสมัย</p>
+        <div class="hero-buttons">
+          <button onclick="navigateTo('showcase')" class="btn-primary">ดูแพ็กเกจบริการ <svg class="icon-sm" style="stroke:white;"><use href="#icon-arrow-right"/></svg></button>
+          <button onclick="navigateTo('login')" class="btn-secondary">เริ่มต้นใช้งานฟรี</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-mockup">
+          <div class="mockup-header"><div class="mockup-dot red"></div><div class="mockup-dot yellow"></div><div class="mockup-dot green"></div></div>
+          <div class="mockup-content">
+            <div class="mockup-avatar"><svg><use href="#icon-user"/></svg></div>
+            <div class="mockup-line"></div><div class="mockup-line short"></div><div class="mockup-line shorter"></div>
+            <div class="mockup-cards">
+              <div class="mockup-card"><svg><use href="#icon-file"/></svg></div>
+              <div class="mockup-card"><svg><use href="#icon-chart"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card card-1">
+          <div class="floating-card-icon"><svg style="stroke-width:2.5;"><use href="#icon-check"/></svg></div>
+          <div><div class="floating-card-text">Portfolio สำเร็จ</div><div class="floating-card-sub">150+ โปรเจกต์</div></div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="floating-card-icon"><svg style="fill:var(--primary);stroke-width:2;"><use href="#icon-star"/></svg></div>
+          <div><div class="floating-card-text">คะแนนเฉลี่ย</div><div class="floating-card-sub">4.9/5.0</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><svg><use href="#icon-zap"/></svg>บริการของเรา</div>
+        <h2 class="section-title">ครบวงจร ตั้งแต่ Portfolio ถึงระบบองค์กร</h2>
+        <p class="section-desc">เลือกบริการที่ตอบโจทย์ธุรกิจของคุณ ตั้งแต่เว็บไซต์ส่วนบุคคลไปจนถึงระบบจัดการองค์กรแบบ Custom</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><svg><use href="#icon-briefcase"/></svg></div>
+          <h3>Portfolio Website</h3>
+          <p>เว็บไซต์ Portfolio ส่วนบุคคล โชว์ผลงาน ทักษะ และประสบการณ์ สร้าง Personal Branding ที่โดดเด่น</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg><use href="#icon-building"/></svg></div>
+          <h3>Corporate Website</h3>
+          <p>เว็บไซต์องค์กรที่ดูเป็นมืออาชีพ เพิ่มความน่าเชื่อถือ และสร้างภาพลักษณ์ที่ดีให้ธุรกิจของคุณ</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg><use href="#icon-settings"/></svg></div>
+          <h3>Business System</h3>
+          <p>ระบบจัดการฝ่ายขาย ระบบเช่ารถออนไลน์ และระบบจัดการข้อมูลภายในองค์กร แบบ Custom Development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div><div class="stat-number">150+</div><div class="stat-label">โปรเจกต์สำเร็จ</div></div>
+        <div><div class="stat-number">98%</div><div class="stat-label">ความพึงพอใจลูกค้า</div></div>
+        <div><div class="stat-number">50+</div><div class="stat-label">ลูกค้าองค์กร</div></div>
+        <div><div class="stat-number">4.9</div><div class="stat-label">คะแนนรีวิวเฉลี่ย</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>พร้อมเริ่มต้นโปรเจกต์ของคุณ?</h2>
+      <p>เลือกแพ็กเกจบริการที่เหมาะกับคุณ หรือติดต่อทีมงานเพื่อปรึกษาฟรี</p>
+      <button onclick="navigateTo('showcase')" class="btn-primary">ดูแพ็กเกจและราคา <svg class="icon-sm" style="stroke:var(--primary);"><use href="#icon-arrow-right"/></svg></button>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: SHOWCASE -->
+<div id="page-showcase" class="app-page">
+  <header class="page-header">
+    <div class="container">
+      <div class="section-label"><svg><use href="#icon-palette"/></svg>Service Packages</div>
+      <h1 class="page-title">คลังผลงานและแพ็กเกจบริการ</h1>
+      <p class="section-desc">เลือกชมตัวอย่างผลงานระดับพรีเมียม และเพิ่มลงตะกร้าเพื่อรวมบริการสั่งซื้อได้อย่างลงตัว</p>
+      <div class="category-filters">
+        <button class="filter-btn active" onclick="filterPortfolio('all', this)">ทั้งหมด</button>
+        <button class="filter-btn" onclick="filterPortfolio('portfolio', this)">Portfolio</button>
+        <button class="filter-btn" onclick="filterPortfolio('corporate', this)">Corporate</button>
+        <button class="filter-btn" onclick="filterPortfolio('system', this)">Business System</button>
+      </div>
+    </div>
+  </header>
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: ABOUT -->
+<div id="page-about" class="app-page">
+  <section class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><svg><use href="#icon-users"/></svg>About Us</div>
+        <h2 class="section-title">เกี่ยวกับ PortfolioPro Studio</h2>
+        <p class="section-desc">ทีมพัฒนาเว็บไซต์และระบบแอปพลิเคชันที่มุ่งเน้นคุณภาพและประสบการณ์ผู้ใช้</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="ทีมงาน PortfolioPro Studio">
+        </div>
+        <div class="about-content">
+          <h2>เราคือใคร?</h2>
+          <p>PortfolioPro Studio เป็นสตูดิโอพัฒนาเว็บไซต์และระบบดิจิทัล ที่เชี่ยวชาญด้าน Portfolio Website, Corporate Website และ Business System แบบ Custom</p>
+          <p>เราใช้เทคโนโลยี React, Golang และ PostgreSQL เพื่อสร้างผลงานที่มีประสิทธิภาพ ปลอดภัย และขยายได้ในอนาคต</p>
+          <button onclick="navigateTo('contact')" class="btn-primary" style="margin-top:16px;">ติดต่อทีมงาน <svg class="icon-sm" style="stroke:white;"><use href="#icon-arrow-right"/></svg></button>
+        </div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar"><svg><use href="#icon-user"/></svg></div>
+          <h4>คุณสมชาย ใจดี</h4><span>Founder & Lead Developer</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><svg><use href="#icon-user"/></svg></div>
+          <h4>คุณมานี มีสุข</h4><span>UI/UX Designer</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><svg><use href="#icon-user"/></svg></div>
+          <h4>คุณวิชัย เก่งมาก</h4><span>Full-Stack Developer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: CONTACT -->
+<div id="page-contact" class="app-page">
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><svg><use href="#icon-mail"/></svg>Contact</div>
+        <h2 class="section-title">ติดต่อเรา</h2>
+        <p class="section-desc">สนใจบริการหรือต้องการปรึกษาโปรเจกต์ ส่งข้อความมาได้เลย ทีมงานจะติดต่อกลับภายใน 24 ชม.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-item">
+            <div class="contact-icon"><svg><use href="#icon-mail"/></svg></div>
+            <div><strong>อีเมล</strong><p style="color:var(--text-light);margin-top:4px;">contact@portfoliopro.studio</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg><use href="#icon-phone"/></svg></div>
+            <div><strong>โทรศัพท์</strong><p style="color:var(--text-light);margin-top:4px;">02-123-4567</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg><use href="#icon-map"/></svg></div>
+            <div><strong>ที่อยู่</strong><p style="color:var(--text-light);margin-top:4px;">123 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพฯ 10110</p></div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleContactSubmit(event)">
+          <div class="form-group"><label class="form-label">ชื่อ - นามสกุล</label><input type="text" class="form-control" placeholder="สมชาย ใจดี" required></div>
+          <div class="form-group"><label class="form-label">อีเมล</label><input type="email" class="form-control" placeholder="name@example.com" required></div>
+          <div class="form-group"><label class="form-label">ข้อความ</label><textarea class="form-control" placeholder="บอกเราเกี่ยวกับโปรเจกต์ของคุณ..." required></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">ส่งข้อความ <svg class="icon-sm" style="stroke:white;"><use href="#icon-arrow-right"/></svg></button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: LOGIN -->
+<div id="page-login" class="app-page">
+  <section class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="logo-icon" style="margin:0 auto 16px;"><svg><use href="#icon-logo"/></svg></div>
+        <h2 id="auth-title">เข้าสู่ระบบ</h2>
+        <p id="auth-subtitle">จัดการหน้า Portfolio และผลงานดิจิทัลของคุณ</p>
+      </div>
+      <form onsubmit="handleAuthSubmit(event)">
+        <div class="form-group" id="name-group" style="display:none;">
+          <label class="form-label">ชื่อ - นามสกุล</label>
+          <input type="text" id="auth-name" class="form-control" placeholder="สมชาย ใจดี">
+        </div>
+        <div class="form-group">
+          <label class="form-label">อีเมล</label>
+          <input type="email" id="auth-email" class="form-control" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">รหัสผ่าน</label>
+          <input type="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <button type="submit" id="auth-submit-btn" class="btn-primary" style="width:100%;justify-content:center;margin-top:10px;">เข้าสู่ระบบ <svg class="icon-sm" style="stroke:white;"><use href="#icon-arrow-right"/></svg></button>
+      </form>
+      <div class="auth-footer">
+        <span id="auth-switch-text">ยังไม่มีบัญชีใช่ไหม?</span>
+        <a onclick="toggleAuthMode()" id="auth-switch-link">สมัครสมาชิกฟรี</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGE: DASHBOARD -->
+<div id="page-dashboard" class="app-page">
+  <section class="dashboard-wrapper">
+    <div class="container">
+      <div class="dashboard-header">
+        <div>
+          <h1 class="dashboard-title">แผงควบคุมระบบ</h1>
+          <p style="color:var(--text-light);">จัดการเนื้อหาและดูสถิติ Portfolio ของคุณ</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-primary" onclick="showToast('ฟังก์ชันจำลอง: เปิดหน้าต่างเพิ่มผลงานใหม่')">+ เพิ่มผลงานใหม่</button>
+          <button class="btn-secondary" onclick="logout()">ออกจากระบบ</button>
+        </div>
+      </div>
+      <div class="dashboard-grid">
+        <aside class="dashboard-sidebar">
+          <ul class="sidebar-menu">
+            <li><a class="sidebar-link active" onclick="switchDashboardTab('overview', this)"><svg class="icon-nav"><use href="#icon-layout"/></svg> ภาพรวมสถิติ</a></li>
+            <li><a class="sidebar-link" onclick="switchDashboardTab('projects', this)"><svg class="icon-nav"><use href="#icon-briefcase"/></svg> จัดการผลงาน</a></li>
+            <li><a class="sidebar-link" onclick="switchDashboardTab('settings', this)"><svg class="icon-nav"><use href="#icon-settings"/></svg> ตั้งค่าโปรไฟล์</a></li>
+          </ul>
+        </aside>
+        <main class="dashboard-content">
+          <div id="dash-tab-overview" class="dashboard-tab active">
+            <h3 style="margin-bottom:24px;">สถิติการเข้าชมเว็บ</h3>
+            <div class="stat-cards">
+              <div class="stat-card"><div class="stat-card-label">ผู้เข้าชมวันนี้</div><div class="stat-card-value">1,240</div></div>
+              <div class="stat-card"><div class="stat-card-label">โปรเจกต์ที่ออนไลน์</div><div class="stat-card-value" style="color:var(--accent);">6</div></div>
+              <div class="stat-card"><div class="stat-card-label">ยอดสั่งซื้อเดือนนี้</div><div class="stat-card-value">฿42,500</div></div>
+            </div>
+            <div class="mock-chart">
+              <svg style="width:48px;height:48px;margin-bottom:16px;opacity:0.5;stroke:var(--text-light);"><use href="#icon-chart"/></svg>
+              <p>ส่วนจัดแสดงกราฟสถิติแบบ Real-time (Mockup Area)</p>
+            </div>
+          </div>
+          <div id="dash-tab-projects" class="dashboard-tab">
+            <h3 style="margin-bottom:24px;">ผลงานของฉัน</h3>
+            <div class="project-list" id="project-list"></div>
+          </div>
+          <div id="dash-tab-settings" class="dashboard-tab">
+            <h3 style="margin-bottom:24px;">ตั้งค่าโปรไฟล์</h3>
+            <div class="form-group"><label class="form-label">ชื่อที่แสดง</label><input type="text" class="form-control" value="สมชาย ใจดี"></div>
+            <div class="form-group"><label class="form-label">อีเมล</label><input type="email" class="form-control" value="somchai@example.com"></div>
+            <div class="form-group"><label class="form-label">เกี่ยวกับตัวเอง</label><textarea class="form-control" style="min-height:100px;">UX/UI Designer ที่หลงใหลในการสร้างประสบการณ์ดิจิทัล</textarea></div>
+            <button class="btn-primary" onclick="showToast('บันทึกการตั้งค่าสำเร็จ (Mockup)')">บันทึกการตั้งค่า</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+</div>
+
+</div><!-- end main-content -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon"><svg><use href="#icon-logo"/></svg></div> PortfolioPro Studio</div>
+        <p>ธุรกิจรับออกแบบและพัฒนาเว็บไซต์ Portfolio และระบบสำหรับองค์กร ด้วยเทคโนโลยีที่ทันสมัย</p>
+      </div>
+      <div class="footer-col">
+        <h4>บริการ</h4>
+        <ul>
+          <li><a onclick="navigateTo('showcase')">Portfolio Website</a></li>
+          <li><a onclick="navigateTo('showcase')">Corporate Website</a></li>
+          <li><a onclick="navigateTo('showcase')">Business System</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>เมนู</h4>
+        <ul>
+          <li><a onclick="navigateTo('showcase')">คลังผลงาน</a></li>
+          <li><a onclick="navigateTo('about')">เกี่ยวกับเรา</a></li>
+          <li><a onclick="navigateTo('contact')">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <ul>
+          <li><a>contact@portfoliopro.studio</a></li>
+          <li><a>Line: @portfoliopro_studio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 PortfolioPro Studio. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3><svg class="icon" style="stroke:var(--text);fill:none;"><use href="#icon-cart"/></svg> รายการบริการที่เลือก</h3>
+    <button class="cart-close" onclick="toggleCart()">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span class="cart-total-label">ประมาณการยอดรวม:</span>
+      <span class="cart-total-price" id="cartTotalPrice">฿0</span>
+    </div>
+    <button class="btn-checkout" onclick="checkout()">ดำเนินการส่งข้อมูลสั่งซื้อ <svg class="icon-sm" style="stroke:white;fill:none;"><use href="#icon-arrow-right"/></svg></button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
