@@ -29,6 +29,7 @@ func Connect() {
 		&models.PortfolioItem{}, &models.BlogPost{}, &models.SiteConfig{}, &models.Coupon{},
 		&models.Project{}, &models.Contract{}, &models.Delivery{},
 		&models.AnalyticsEvent{},
+		&models.SatisfactionSurvey{},
 	); err != nil {
 		log.Fatalf("Failed to migrate database: %v", err)
 	}

@@ -66,6 +66,15 @@ export function getContacts(token, params = {}) {
   return adminFetch(`/contacts${qs ? `?${qs}` : ''}`, token);
 }
 
+export function getSatisfactions(token, params = {}) {
+  const qs = new URLSearchParams(params).toString();
+  return adminFetch(`/satisfaction${qs ? `?${qs}` : ''}`, token);
+}
+
+export function deleteSatisfaction(token, id) {
+  return adminFetch(`/satisfaction/${id}`, token, { method: 'DELETE' });
+}
+
 export function getContact(token, id) {
   return adminFetch(`/contacts/${id}`, token);
 }

@@ -18,6 +18,8 @@ const NAV = [
 
   { to: '/admin/contacts', label: 'ติดต่อเรา', icon: 'mail' },
 
+  { to: '/admin/satisfaction', label: 'ประเมินความพึงพอใจ', icon: 'star' },
+
   { to: '/admin/quotations', label: 'ใบเสนอราคา', icon: 'file-text' },
 
   { to: '/admin/portfolio', label: 'บริการ/Portfolio', icon: 'briefcase' },

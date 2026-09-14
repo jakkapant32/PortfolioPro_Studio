@@ -16,11 +16,12 @@ const contactMenu = {
   label: 'ติดต่อ',
   shortLabel: 'ติดต่อ',
   icon: 'icon-mail',
-  paths: ['/contact', '/faq', '/blog'],
+  paths: ['/contact', '/faq', '/blog', '/satisfaction'],
   children: [
     { to: '/contact', label: 'ติดต่อเรา', shortLabel: 'ติดต่อเรา', icon: 'icon-mail' },
     { to: '/faq', label: 'คำถามที่พบบ่อย', shortLabel: 'FAQ', icon: 'icon-message' },
     { to: '/blog', label: 'บทความ', shortLabel: 'บทความ', icon: 'icon-file' },
+    { to: '/satisfaction', label: 'ประเมินความพึงพอใจ', shortLabel: 'ประเมิน', icon: 'icon-star' },
   ],
 };
 
