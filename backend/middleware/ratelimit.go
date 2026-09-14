@@ -56,8 +56,10 @@ var globalLimiter = newRateLimiter()
 
 // RateLimit returns middleware limiting requests per client key.
 func RateLimit(max int, window time.Duration) gin.HandlerFunc {
+	bucket := strconv.Itoa(max) + ":" + strconv.FormatInt(window.Nanoseconds(), 10)
 	return func(c *gin.Context) {
-		if !globalLimiter.allow(clientKey(c), max, window) {
+		key := clientKey(c) + "|" + bucket
+		if !globalLimiter.allow(key, max, window) {
 			c.JSON(http.StatusTooManyRequests, gin.H{
 				"error": "คำขอมากเกินไป กรุณารอสักครู่แล้วลองใหม่",
 			})
